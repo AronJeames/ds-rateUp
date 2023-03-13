@@ -10,7 +10,7 @@ interface vatLike {
 }
 
 contract rateup {
-    function GetilkDart(address vat, bytes32 ilk) external returns(uint256 art) {
+    function GetilkDebt(address vat, bytes32 ilk) external returns(uint256 art) {
         (art, , , ,) = vatLike(vat).ilks(ilk);
     }
 
